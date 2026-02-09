@@ -1,0 +1,47 @@
+.l-robot-page{
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.l-robot-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 2rem;
+    margin: 0 5.25rem;
+    gap: 4rem;
+}
+
+.l-robot-actions{
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.l-robot-actions__btn{
+    background-color: aqua;
+    color: #000;
+    font-size: 16px;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+
+.l-robot-report{
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+
+    button{
+        background-color: #000;
+        color: #fff;
+        font-size: 16px;
+        padding: 1rem;
+        margin: 1rem;
+        border: 1px solid aqua;
+        border-radius: 10px;
+    }
+
+}

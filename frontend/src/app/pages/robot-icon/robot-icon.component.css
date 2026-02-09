@@ -1,0 +1,71 @@
+.l-icon-containers {
+    background-color: #1a1a1a;
+    border: 2px dashed #00d4ff;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 100px;
+    position: absolute;
+    left: -10rem;
+    top: 200px;
+    z-index: 10;
+}
+
+.l-robot-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    background-color: #2a2a2a;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.l-robot-icon:hover {
+    background-color: #3a3a3a;
+}
+
+.l-robot-icon span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.l-robot-icon span ::ng-deep svg {
+    width: 32px;
+    height: 32px;
+    fill: #00d4ff;
+}
+
+/* Robot on grid */
+.l-robot-on-grid {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    z-index: 50;
+    pointer-events: none;
+}
+
+.l-robot-on-grid span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.l-robot-on-grid span ::ng-deep svg {
+    width: 28px;
+    height: 28px;
+    fill: #00d4ff;
+}

@@ -1,0 +1,18 @@
+<div class="l-icon-containers">
+    @for(item of robotIcon; track item.id) {
+        <div class="l-robot-icon">
+            <span [innerHTML]="item.icon"></span>
+            <span [innerHTML]="item.arrow"></span>
+        </div>
+    }
+</div>
+
+<!-- Single robot on grid -->
+@if(activeRobotId() !== null) {
+    <div class="l-robot-on-grid" 
+        [style.left.px]="pixelPosition().x" 
+        [style.top.px]="pixelPosition().y">
+        <span [innerHTML]="robotIcon[0].icon"></span>
+        <span [innerHTML]="getArrowForDirection()"></span>
+    </div>
+}

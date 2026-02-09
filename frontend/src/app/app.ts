@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcome } from './nx-welcome';
+import { Robot } from "./pages/robot/robot.component";
 
 @Component({
-  imports: [NxWelcome, RouterModule],
+  imports: [RouterModule, Robot],
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.css',
