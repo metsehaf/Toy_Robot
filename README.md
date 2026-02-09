@@ -1,5 +1,7 @@
 # Toy Robot Simulator
 
+![High-level Architecture](docs/architecture.png)
+
 A full-stack web application that simulates a robot moving on a 5×5 grid. Built with Angular frontend and NestJS backend, featuring real-time state management, persistent database storage, and boundary-protected movement.
 
 ## Overview
