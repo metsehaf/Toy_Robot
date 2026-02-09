@@ -1,0 +1,24 @@
+<div id="robot-playground" class="l-robot-playground">
+    <div class="l-robot-header">
+        <p>Click to place the robot on the table.</p>
+        <div class="l-report-message">{{ reportMessage() }}</div>
+    </div>
+    
+    <app-robot-icon 
+        [newRobotLocation]="newRobotLocation()" 
+        [activeRobotId]="activeRobotId()"
+        [robotFacing]="robotState()?.facing || 'NORTH'">
+    </app-robot-icon>
+
+    <table class="l-robot-table">
+        <tbody>
+            @for(row of robotPlayground; track $index){
+            <tr>
+                @for(cell of row; track $index){
+                <td>{{cell}}</td>
+                }
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
